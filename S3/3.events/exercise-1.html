@@ -1,0 +1,21 @@
+<!-- Añade un botón a tu html con el id btnToClick y en tu javascript añade el evento click que ejecute un console log con la información del evento del click -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón con Evento Click</title>
+</head>
+<body>
+
+    <button id="btnToClick">Haz clic</button>
+
+    <script>
+        document.querySelector('#btnToClick').addEventListener('click', function(event) {
+    console.log('Se hizo clic en el botón. Información del evento:', event);
+});
+
+    </script>
+</body>
+</html>
