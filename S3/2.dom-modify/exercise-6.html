@@ -1,0 +1,29 @@
+<!-- Basandote en el siguiente array crea una lista ul > li con los textos del array.-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Dinámica</title>
+</head>
+
+<body>
+
+    <script>
+        const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
+        const body = document.body;
+        const ulElement = document.createElement('ul');
+        apps.forEach(app => {
+            const liElement = document.createElement('li');
+            liElement.textContent = app;
+            ulElement.appendChild(liElement);
+        });
+        body.appendChild(ulElement);
+    </script>
+
+</body>
+
+</html>

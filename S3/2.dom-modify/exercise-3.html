@@ -1,0 +1,28 @@
+<!-- // Inserta dinamicamente en un html un div que contenga 6 p utilizando un loop con javascript.
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Inserción Dinámica</title>
+</head>
+
+<body>
+
+    <script>
+        const nuevoDiv = document.createElement("div");
+
+        for (let i = 1; i <= 6; i++) {
+            const nuevoParrafo = document.createElement("p");
+            nuevoParrafo.textContent = "Este es el párrafo número " + i;
+            nuevoDiv.appendChild(nuevoParrafo);
+        }
+        document.body.appendChild(nuevoDiv);
+    </script>
+
+</body>
+
+</html>
